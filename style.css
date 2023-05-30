@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#center_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 75vh;
+    flex-direction: column;
+    background-image: url(images/main-background.jpg);
+    background-size: cover;
+}
+
+#center_content #header_title_transparent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    min-height: 75vh;
+    width: 100%;
+    background: linear-gradient(rgba(52, 73, 94, 0.2) 0%,rgba(52, 73, 94, 0.6) 100%);
+}
+
+#center_content #header_title h1 {
+    overflow: hidden;
+    position: absolute;
+    border-right: 0.15em solid #f1c40f;
+    white-space: nowrap;
+    margin: 0 auto;
+    left: 30%;
+    animation: typing 2.5s steps(30, end), typing-cursor 0.5s step-end infinite;
+}
+
+#center_content #header_title h1 a {
+    font-size: 5rem;
+    font-family: monospace, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 42%
+    }
+}
+
+@keyframes typing-cursor {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: #f1c40f
+    }
+}
+
+#icons_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: calc(40% - 160px);
+    width: 40%;
+    height: 100px;
+    margin-top: 25px;
+    background: rgba(52, 73, 94, 0.7);
+    border-radius: 20px;
+}
+
+#icons_list img {
+    width: 100px;
+    margin: 0px 50px;
+    padding: 10px;
+}
+
+#language_container {
+    display: grid;
+    grid: repeat(1, 50%) / auto-flow 50%;
+}
+
+#language_container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25vh;
+}
+
+#language_container .hover_transform:hover > #html_transparent #html_container a {
+    font-size: 70px;
+    color: #f1c40f;
+    transition: all 0.1s ease-in;
+}
+
+#language_container .hover_transform:hover > #css_transparent #css_container a {
+    font-size: 70px;
+    color: #f1c40f;
+    transition: all 0.1s ease-in;
+}
+
+#language_container div a {
+    font-size: 50px;
+    font-family: monospace, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    margin: auto;
+    transition: all 0.1s ease-in;
+}
+
+#html_transparent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25vh;
+    background-image: url(images/html-background.jpg);
+}
+
+#html_transparent img {
+    height: 100%;
+    width: 200px;
+    background: rgba(241, 196, 15, 0.5);
+    padding: 20px;
+}
+
+#css_transparent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25vh;
+    background-image: url(images/css-background.jpg);
+}
+
+#css_transparent img {
+    height: 100%;
+    width: 200px;
+    background: rgba(26, 188, 156, 0.5);
+    padding: 20px;
+}
+
+#html_container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25vh;
+    background: rgba(52, 73, 94, 0.7);
+}
+
+#css_container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25vh;
+    background: rgba(52, 73, 94, 0.7);
+}
