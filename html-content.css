@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -94,22 +96,37 @@ header nav ul li:nth-child(2) a:hover {
     border-radius: 10px;
 }
 
+#html_content #html_sheet thead tr {
+    background: rgb(52, 73, 94);
+}
+
+#html_content #html_sheet thead tr th {
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
 #html_content #html_sheet tbody tr {
     height: 45px;
     text-align: center;
 }
 
 #html_content #html_sheet tbody tr:nth-child(odd) {
-    background: #bdc3c7;
+    background: #ecf0f1;
     width: 75%;
 }
 
 #html_content #html_sheet tbody tr:nth-child(even) {
-    background: #ecf0f1;
+    background: white;
     width: 75%;
 }
 
 #html_content #html_sheet tbody tr td:first-child {
     color: #c0392b;
     font-weight: bold;
+}
+
+#html_content #html_sheet tbody tr td:nth-child(2) {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-size: 16px;
 }

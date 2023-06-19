@@ -11,8 +11,10 @@
     position: relative;
     min-height: 75vh;
     flex-direction: column;
+    /*
     background-image: url(images/main-background.jpg);
     background-size: cover;
+    */
 }
 
 #center_content #header_title_transparent {
@@ -42,7 +44,7 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: white;
+    color: rgb(52, 73, 94);
 }
 
 @keyframes typing {
@@ -73,7 +75,7 @@
     width: 40%;
     height: 100px;
     margin-top: 25px;
-    background: rgba(52, 73, 94, 0.7);
+    background: rgba(52, 73, 94, 0.4);
     border-radius: 20px;
 }
 
@@ -96,19 +98,31 @@
     height: 25vh;
 }
 
-#language_container .hover_transform:hover > #html_transparent #html_container a {
+#language_container .hover_transform:hover > #html_transparent #html_container p {
     font-size: 70px;
     color: #f1c40f;
     transition: all 0.1s ease-in;
 }
 
-#language_container .hover_transform:hover > #css_transparent #css_container a {
+#language_container .hover_transform:hover > #css_transparent #css_container p {
     font-size: 70px;
     color: #f1c40f;
     transition: all 0.1s ease-in;
 }
 
 #language_container div a {
+    font-size: 50px;
+    font-family: monospace, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    margin: auto;
+    transition: all 0.1s ease-in;
+}
+
+#language_container > a > div > div > div > p {
     font-size: 50px;
     font-family: monospace, sans-serif;
     text-decoration: none;
